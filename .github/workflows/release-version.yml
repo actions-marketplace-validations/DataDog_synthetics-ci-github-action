@@ -31,7 +31,7 @@ jobs:
         with:
           scope: DataDog/synthetics-ci-github-action
           policy: self.release-version.create-pr
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ steps.octo-sts.outputs.token }}
