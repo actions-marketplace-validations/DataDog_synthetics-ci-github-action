@@ -37,7 +37,7 @@ jobs:
           echo 'Raw Results:'
           echo $RAW_RESULTS | jq '.'
       - name: Example of parsing and using raw results with JS
-        uses: actions/github-script@v6
+        uses: actions/github-script@v8
         env:
           RAW_RESULTS: ${{ steps.run-synthetics-tests.outputs.raw-results }}
         with:
